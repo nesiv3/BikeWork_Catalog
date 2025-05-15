@@ -17,7 +17,7 @@ COPY . .
 ENV DJANGO_SETTINGS_MODULE=catalog_admin.settings
 
 # Exponer el puerto en el que correrá la aplicación
-EXPOSE 8000
+EXPOSE 80
 
 # Comando para ejecutar el servidor de desarrollo de Django
-CMD ["python", "manage.py", "runserver", "0.0.0.0:8000"]
+CMD ["python", "manage.py", "runserver", "0.0.0.0:80"]
